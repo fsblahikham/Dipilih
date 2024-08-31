@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+    <h1>Halo Gemboell Cintakuu Cayangkuu</h1>
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW11am13bzViNHhlcm9oczQ3d2xneHUydTdzYXQzbHprNmN1YWszeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FLdmIp6wJr91JAI/giphy.gif" alt="">
+    <h1>Jalan-jalannya Minggu Aja Yaa Boellllll Kan Mau Naik Gunung</h1>
+    <button id='btn_mau' onclick='alert("I <3 U BUL!!!")'>Mau</button>
+    <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById('btn_mau');
+      var i = Math.floor(Math.random()*300)+1;
+      var j = Math.floor(Math.random()*100)+mau.offsetTop;
+      id.style.left = i+'px';
+      id.style.top = j+'px';
+    }
+  </script>
+</html>
